@@ -4,6 +4,11 @@
     font-family: sans-serif;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 nav,
 nav * {
     display: flex;
@@ -45,45 +50,39 @@ a:hover {
     color: black;
 }
 
-main {
-    width: 95%;
-    height: 500px;
-    margin: 25px auto;
-    display: flex;
-    justify-content: space-between;
+header div {
+    height: 50px;
+    width: 100%;
 }
 
-#left-panel {
-    width: 67.5%;
+h1 {
+    font-size: large;
+}
+
+h2 {
+    font-size: medium;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
 }
 
-.card {
-    border: solid black 2px;
-    height: 25%;
-    padding: 15px;
+img {
+    margin: 5px;
+    width: 100%;
+    height: 150px;
 }
 
-ul {
-    margin-left: 50px;
-}
-
-li {
-    margin: 15px 0;
-}
-
-#right-panel {
-    width: 27.5%;
-    padding: 15px;
-    border: solid black 2px;
-}
-
-#right-panel h3 {
-    margin-bottom: 10px;
-}
-
-p {
-    text-align: justify;
+.tile {
+    margin: 2px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
 }
